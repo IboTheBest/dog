@@ -1,0 +1,433 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v32-latin-500.woff2') format('woff2'); 
+  }
+  @font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2'); 
+  }
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    transition: all 0.4s ease-in;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styling start  */
+.site-header a{
+    color: black;
+}
+.site-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 41px;
+}
+.site-navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+.nav-buttons a + a{
+    margin-left: 39px;    
+}
+/* Header styling end  */
+
+
+
+/* Hero section styling start */
+.hero-background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+}
+.hero-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-wrapper{
+    width: 613px;
+    height: 338px;
+    border-radius: 24px;
+
+}
+.text-wrapper .title{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120px;
+    text-align: left;
+
+}
+.hero-btn {
+    margin-top: 120px;
+    width: 123px;
+    height: 48px;
+    border-radius: 24px;
+    background: rgba(226, 123, 58, 1);
+    border: none;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+button:hover{
+    transform: scale(1.05);
+    color: red;
+    background: white;
+    border:  2px solid red;
+}
+.hero-btn1 {
+    margin-top: 120px;
+    width: 139px;
+    height: 48px;
+    border-radius: 24px;
+    background: white;
+    border: 1px solid rgba(226, 123, 58, 1);
+    color: rgba(226, 123, 58, 1);
+    transition: all 0.4s ease-in-out;
+}
+.hero-img {
+    width: 570px;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Hero section styling end */
+
+
+
+/* Pen-foods section styling start  */
+.best-quality-section{
+    margin-top: 159px;
+}
+.best-quality-section-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.best-quality-section-list-item{
+    padding: 0 30px;
+    width: 30%;
+    height: 241px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+    background-color: white;
+
+}
+.best-quality-section-title{
+    font-family: 'Roboto',sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: center;
+    margin-top: 70px;
+}
+.section-img{
+   position: relative;
+   margin-top: -30px;
+   
+}
+.best-quality-section-img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 45%;
+    top: 15px;
+    
+   
+}
+.vector{
+    position: absolute;
+    left: 40%;
+}
+.best-quality-section-text{
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+}
+.best-quality-section-list-item-link{
+    color: rgba(226, 123, 58, 1);
+    position: relative;
+    bottom: -35px;
+    left: 37%;
+}
+.site-header-list-item-link-text{
+    transition: all 0.4s ease-in-out;
+}
+/* Pen-foods section styling end  */
+
+/* Products styles start */
+.product-section {
+    padding-bottom: 58px;
+}
+.product-title {
+    font-size: 32.25px;
+    font-weight: 500;
+    line-height: 48.38px;
+    text-align: center;
+    color: #170C04;
+    margin-bottom: 18px;
+}
+.product-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #170C04;
+    padding-bottom: 25px;
+}
+.product-list {
+    display: flex;
+    margin-bottom:120px;
+    justify-content: space-between;
+}
+.product-item {
+    width: 555px;
+    height: 420px;
+    vertical-align: middle;
+    margin-right: 30px;
+    display: inline-block;
+    background-color: #FCF2EB;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.product-img {
+    margin-top: 80px;
+    transition: all 0.3s;
+}
+.product-img:hover{
+    transform: scale(1.2);
+    
+}
+.product-text-wrapper {
+    margin-top: 75px;
+}
+.product-subtitle {
+    margin-bottom: 9px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 37.5px;
+    color: #170C04;
+    
+}
+.product-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+    color: #E27B3A;
+}
+
+.product-list2 {
+
+    display: flex;
+    justify-content: space-between;
+}
+.product-item2 {
+    width: 360px;
+    height: 273px;
+    vertical-align: middle;
+    margin-right: 30px;
+    display: inline-block;
+    background-color: #FCF2EB;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.product-sub-images {
+    margin-top: 65px;
+    transition: all 0.3s;
+}
+.product-sub-images:hover {
+    transform: scale(1.2);
+   
+}
+.remove-img {
+    margin-top: 0;
+}
+.product-text-wrapper2 {
+    margin-top: 100px;
+}
+.active-bg {
+    margin-top: 0;
+}
+.active-bgh {
+    margin-top: -50px;
+}
+.product-subtitle2 {
+    margin-top: 50px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: #170C04;
+}
+.product-link2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+    color: #E27B3A;
+}
+.product-btn {
+    width: 185px;
+    height: 48px;
+    display: block;
+    margin: 150px auto;
+    color: #E27B3A;
+    border-radius: 4px;
+    border: #E27B3A;
+
+}
+/* Products styles start */
+
+
+.veterenar-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.texts-wrapper {
+    width: 487px;
+}
+.veterenar-section .container .title {
+    font-family: 'Poppins',sans-serif;
+    font-size: 32.25px;
+    font-weight: 400;
+    line-height: 45.15px;
+    text-align: left;
+
+}
+.veterenar-section .container  .text {
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
+.appointment {
+    width: 140px;
+    height: 48px;
+    border-radius: 24px ;
+    background: rgba(226, 123, 58, 1);
+    color: white;
+    border: none;
+}
+.details {
+    margin-top: 120px;
+    width: 139px;
+    height: 48px;
+    border-radius: 24px;
+    background: white;
+    border: 1px solid rgba(226, 123, 58, 1);
+    color: rgba(226, 123, 58, 1);
+}
+
+/* Suspection styling start */
+.title-wrapper {
+    margin: 0 auto; 
+    width: 250px;
+    text-align: center;
+}
+.title-wrapper h2{
+    font-family: 'Poppins',sans-serif;
+    font-size: 32.25px;
+    font-weight: 500;
+    line-height: 45.15px;
+    text-align: center;
+
+}
+.suspection .container ul{
+    display: flex;
+    margin-top: 53px;
+    justify-content: space-between;
+    align-items: center;
+}
+.suspection .container ul li{
+    width: 360px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    gap: 30px   ;
+
+}
+.suspection .container ul li a{
+    color: rgba(226, 123, 58, 1);
+    display: inline-block;
+    margin-top: 20px;
+}
+.suspection .container button{
+    width: 131px;
+    height: 48px;
+    border-radius: 24px ;
+    background: rgba(226, 123, 58, 1);
+    color: white;
+    border: none;
+    display: block;
+    margin: 40px auto  ; 
+    transition: all 0.4s ease-in-out;
+}
+/* Suspection styling end */
+
+    img{
+        transition: all 0.4s ease-in-out;
+    }
+    img:hover{
+        transform: scale(1.03);
+
+    }
+    a , h1, h2{
+        transition: all 0.4s ease-in-out;
+    }
+    a:hover{
+        color: green;
+        text-shadow: 0 0 5px red;
+    }
+
+    
+    h1:hover{
+    color: green;
+        text-shadow: 0 0 5px red;
+    }
+    h2:hover{
+        color: green;
+        text-shadow: 0 0 5px red;
+    }
